@@ -15,7 +15,7 @@ export default function CreateNav() {
         <NavLogo />
 
         <nav
-          style={{ height: isOpen ? "fit-content" : "0px" }}
+          style={{height: isOpen ? "17.7rem" : "0rem" }}
           aria-label="Glavna navigacija"
         >
           <ul className="nav-links">
@@ -34,8 +34,8 @@ export default function CreateNav() {
           </ul>
 
           <div className="button-group">
-            <Button className="main">Pozovi</Button>
-            <Button className="secondary">Upit</Button>
+            <Button className="button accent">Pozovi</Button>
+            <Button className="button">Upit</Button>
           </div>
         </nav>
 

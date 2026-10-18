@@ -54,7 +54,8 @@ header {
 }
 
 .nav-links li {
-  padding: 0.75rem var(--padding-global-mobile);
+  display: flex;
+  flex-direction: row;
   border-top: 2px solid var(--border);
   text-align: left;
 }
@@ -64,11 +65,13 @@ header {
 }
 
 .nav-links a {
+  padding: 0.75rem var(--padding-global-mobile);
   text-decoration: none;
   text-transform: uppercase;
   color: var(--text-ter);
   font-weight: 500;
   font-size: 0.95rem;
+  width: 100%;
 }
 
 nav {
@@ -80,10 +83,11 @@ nav {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
-  transition: all 0.5s ease;
+  transition: all .75s ease;
   overflow: hidden;
-  height: fit-content;
   background-color: var(--bg);
+  transform-origin: top;
+  border-bottom: 2px solid var(--border);
 }
 
 .button-group {
