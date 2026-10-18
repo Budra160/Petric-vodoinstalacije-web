@@ -1,0 +1,107 @@
+/* HAMBURGER STYLE */
+.hb {
+  width: 2rem;
+  display: block;
+  color: var(--accent);
+}
+
+/* NAV STYLE */
+header {
+  padding: 1.5rem var(--padding-global-mobile);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg);
+  position: relative;
+}
+
+.logo-wrapper {
+  display: flex;
+  gap: 0.5rem;
+  text-transform: uppercase;
+  align-items: end;
+}
+
+.logo-left {
+  font-size: 1.5rem;
+
+  font-family: var(--heading);
+  font-weight: bold;
+}
+
+.logo-left span {
+  color: var(--accent);
+}
+
+.logo-right {
+  height: fit-content;
+  color: var(--text-ter);
+  font-family: var(--tagline);
+  border-left: 2px solid var(--border);
+  padding-left: 0.5rem;
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+}
+
+.nav-links {
+  margin: 0;
+  list-style: none;
+  width: 100%;
+  padding: 0rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+}
+
+.nav-links li {
+  padding: 0.75rem var(--padding-global-mobile);
+  border-top: 2px solid var(--border);
+  text-align: left;
+}
+
+.nav-links li:nth-child(4) {
+  border-bottom: 2px solid var(--border);
+}
+
+.nav-links a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--text-ter);
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+nav {
+  position: absolute;
+  margin: 0 auto;
+  top: 100%;
+  left: 0%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  transition: all 0.5s ease;
+  overflow: hidden;
+  height: fit-content;
+  background-color: var(--bg);
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.skip {
+  position: absolute;
+  top: -80px;
+  left: 16px;
+  z-index: 10;
+  padding: 10px 16px;
+  color: var(--text);
+  background-color: var(--bg);
+}
+
+.skip:focus {
+  top: 10px;
+}

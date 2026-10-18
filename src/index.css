@@ -1,23 +1,23 @@
 :root {
-  --text: #0F2A47;
+  --text: #0f2a47;
   --text-light: #fff;
-  --text-alt: #35557A;
-  --text-ter: #5C6A7D;
-  --text-hover: #1C3F66;
-  --bg: #F4F1E8;
-  --bg-alt: #ECE8DB;
-  --bg-ter: #0F2A47;
-  --border: #5C6A7D;
+  --text-alt: #35557a;
+  --text-ter: #5c6a7d;
+  --text-hover: #1c3f66;
+  --bg: #f4f1e8;
+  --bg-alt: #ece8db;
+  --bg-ter: #0f2a47;
+  --border: hsla(215, 15%, 43%, 0.25);
   --code-bg: #f4f3ec;
-  --accent: #E8541E;
-  --accent-alt: #C44415;
+  --accent: #e8541e;
+  --accent-alt: #c44415;
   --social-bg: rgba(244, 243, 236, 0.5);
   --shadow:
     rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
 
   --tagline: JetBrains_Mono, "Segoe UI", Roboto, sans-serif;
   --heading: Archivo, "Segoe UI", Roboto, sans-serif;
-  --text: IBM_Plex_Sans, Consolas, monospace;
+  --text-font: IBM_Plex_Sans, Consolas, monospace;
 
   --container-large: 1280px;
   --container-medium: 1024px;
@@ -60,9 +60,17 @@
   src: url("../fonts/JetBrains_Mono/JetBrainsMono-VariableFont_wght.ttf");
 }
 
-
 body {
+  font-family: var(--text-font);
   margin: 0;
+  color: var(--text);
+  background-color: var(--bg);
+  background-image:
+    radial-gradient(circle, rgba(15, 42, 71, 0.14) 1px, transparent 1px),
+    radial-gradient(circle, rgba(15, 42, 71, 0.26) 1.2px, transparent 1.2px);
+  background-size:
+    24px 24px,
+    120px 120px;
 }
 
 #root {
@@ -103,19 +111,4 @@ h2 {
 }
 p {
   margin: 0;
-}
-
-code,
-.counter {
-  font-family: var(--mono);
-  display: inline-flex;
-  border-radius: 4px;
-  color: var(--text-h);
-}
-
-code {
-  font-size: 15px;
-  line-height: 135%;
-  padding: 4px 8px;
-  background: var(--code-bg);
 }
