@@ -1,10 +1,10 @@
 import "./sectionhero.css"
 import Button from "./Button"
 
-export default function SectionHero({className = "section", ...props}){
+export default function SectionHero({ ...props}){
     return(
-        <section className={className} {...props}>
-            <div className="container-large padding-section-large">
+        <section {...props}>
+            <div className="container-large  padding-section-large">
                 <div className="hero-wrapper">
                     <div className="hero-content">
                         <div className="hero-top">
