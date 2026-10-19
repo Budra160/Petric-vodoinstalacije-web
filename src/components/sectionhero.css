@@ -1,0 +1,38 @@
+.hero-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.hero-content{
+   display: flex;
+   flex-direction: column;
+   gap: 1.25rem;
+   text-align: left;
+}
+
+
+.hero-top h1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-top h1 .hero-accent {
+  color: var(--accent);
+}
+
+.hero-top h1 .hero-border {
+  color: var(--bg);
+  filter: drop-shadow(1.15px 0 0 var(--text))
+    drop-shadow(0 1.15px 0 var(--text)) 
+    drop-shadow(-1.15px 0 0 var(--text))
+    drop-shadow(0 -1.15px 0 var(--text));
+  z-index: -1;
+}
+
+.hero-bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: flex-start;
+}

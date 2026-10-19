@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
-import Button from "./button";
+import { useState, useEffect } from "react";
+import Button from "./Button";
 import "./header.css";
 
 export default function CreateNav() {
@@ -15,7 +15,7 @@ export default function CreateNav() {
         <NavLogo />
 
         <nav
-          style={{height: isOpen ? "17.7rem" : "0rem" }}
+          style={{ height: isOpen ? "17.85rem" : "0px" }}
           aria-label="Glavna navigacija"
         >
           <ul className="nav-links">
@@ -40,6 +40,7 @@ export default function CreateNav() {
         </nav>
 
         <svg
+          aria-label="Gumb za otvaranje menija"
           onClick={() => setIsOpen(!isOpen)}
           className="hb"
           xmlns="http://www.w3.org/2000/svg"

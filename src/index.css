@@ -24,26 +24,40 @@
   --container-medium: 1024px;
   --contianer-small: 768px;
 
-  --padding-global: 64px;
-  --padding-global-mobile: 20px;
+  --padding-global: 20px;
 
-  --padding-section-large: 112px;
-  --padding-section-large-mobile: 64px;
+  --padding-section-large: 64px;
+  --padding-section-medium: 48px;
 
-  --padding-section-medium: 80px;
-  --padding-section-medium-mobile: 48px;
-
-  --padding-section-small: 48px;
-  --padding-section-small-mobile: 32px;
+  --padding-section-small: 32px;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  @media (max-width: 1024px) {
-    font-size: 16px;
+  font-size: 16px;
+  @media (min-width: 1024px) {
+    --padding-global: 64px;
+    --padding-section-medium: 80px;
+    --padding-section-large: 112px;
+    --padding-section-small: 48px;
   }
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::selection {
+  background-color: var(--accent);
+  color: var(--text-light);
+}
+
+*:focus-visible {
+  outline: 2px solid var(--accent);
 }
 
 @font-face {
@@ -75,11 +89,8 @@ body {
 }
 
 #root {
-  width: 1126px;
-  max-width: 100%;
   margin: 0 auto;
   text-align: center;
-  border-inline: 1px solid var(--border);
   min-height: 100svh;
   display: flex;
   flex-direction: column;
@@ -94,12 +105,11 @@ h2 {
 }
 
 h1 {
-  font-size: 56px;
+  font-weight: 600;
+  font-size: 64px;
   letter-spacing: -1.68px;
-  margin: 32px 0;
   @media (max-width: 1024px) {
-    font-size: 36px;
-    margin: 20px 0;
+    font-size: 56px;
   }
 }
 h2 {
@@ -112,4 +122,17 @@ h2 {
 }
 p {
   margin: 0;
+  line-height: 1.5;
+}
+
+/* Utility classes */
+
+.container-large {
+  max-width: var(--container-large);
+}
+
+.padding-section-large {
+
+  padding: var(--padding-section-large) var(--padding-global);
+  
 }

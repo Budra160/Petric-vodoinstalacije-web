@@ -3,16 +3,23 @@
   width: 2rem;
   display: block;
   color: var(--accent);
+  cursor: pointer;
+  @media screen and (min-width: 1024px) {
+    display: none;
+  }
 }
 
 /* NAV STYLE */
 header {
-  padding: 1.5rem var(--padding-global-mobile);
+  padding: 1.5rem var(--padding-global);
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: var(--bg);
   position: relative;
+  @media screen and (min-width: 1024px) {
+    justify-content: space-between;
+  }
 }
 
 .logo-wrapper {
@@ -51,6 +58,12 @@ header {
   display: flex;
   flex-direction: column;
   gap: 0rem;
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    gap: 0.5rem;
+    height: fit-content;
+    width: fit-content;
+  }
 }
 
 .nav-links li {
@@ -58,20 +71,31 @@ header {
   flex-direction: row;
   border-top: 2px solid var(--border);
   text-align: left;
+  @media screen and (min-width: 1024px) {
+    border: none;
+  }
 }
 
 .nav-links li:nth-child(4) {
   border-bottom: 2px solid var(--border);
+  @media (min-width: 1024px) {
+    border: none;
+  }
 }
 
 .nav-links a {
-  padding: 0.75rem var(--padding-global-mobile);
+  padding: 0.75rem var(--padding-global);
   text-decoration: none;
   text-transform: uppercase;
   color: var(--text-ter);
   font-weight: 500;
   font-size: 0.95rem;
   width: 100%;
+  transition: all 0.25s ease;
+}
+
+.nav-links a:hover {
+  color: var(--text);
 }
 
 nav {
@@ -83,19 +107,22 @@ nav {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
-  transition: all .75s ease;
+  transition: all 0.75s ease;
   overflow: hidden;
   background-color: var(--bg);
   transform-origin: top;
   border-bottom: 2px solid var(--border);
+  @media (min-width: 1024px) {
+    position: static !important;
+    align-items: center !important;
+    height: fit-content !important;
+    flex-direction: row !important;
+    border: none !important;
+    gap: 0.5rem !important;
+    width: fit-content !important;
+    margin: 0 !important;
+  }
 }
-
-.button-group {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
 .skip {
   position: absolute;
   top: -80px;

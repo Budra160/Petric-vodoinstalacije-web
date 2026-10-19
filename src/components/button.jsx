@@ -1,9 +1,9 @@
 import "./button.css";
 
 export default function Button({ children, className = "button", ...props }) {
-  return(
+  return (
     <button className={className} {...props}>
-    {children}
+      {children}
     </button>
-  )
+  );
 }

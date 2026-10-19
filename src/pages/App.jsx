@@ -1,11 +1,10 @@
-
-
+import SectionHero from "../components/SectionHero";
 import "./App.css";
 
 function App() {
   return (
     <>
-      <p>Something</p>
+      <SectionHero />
     </>
   );
 }
