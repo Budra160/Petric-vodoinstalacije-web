@@ -1,20 +1,20 @@
 import SectionHero from "../components/SectionHero";
 import Section from "../components/Section";
-import Card from "../components/card";
-import { useEffect } from "react";
+import Card, { cardContent } from "../components/card";
+import SectionCta from "../components/SectionCta";
+import { useEffect, useState } from "react";
 import "./App.css";
+import Button from "../components/Button";
 
  
 function App() {
-  let cards;
+  const [cards, setCards] = useState([])
 
   useEffect(() => {
     function generateCards(){
-      cards = cardContent.map(data => {
-          <Card tagText={data.tagline} title={data.title} subText={data.subTitle} content={data.content} cardId={data.id}/>
-      })
-
-      console.log(cards);
+      setCards(cardContent.map(data => {
+          return <Card tagText={data.tagline} title={data.title} subText={data.subTitle} content={data.content} key={data.id} id={data.id}/>
+      }))
     } 
 
     generateCards();
@@ -23,9 +23,10 @@ function App() {
   return (
     <>
       <SectionHero />
-      <Section tagText={"01 - Usluge"} title={"Tri specijalnosti. Jedan standard izvedbe."} children={<div className="cards-wrapper"> </div>}>
-        
+      <Section tagText={"01 - Usluge"} title={"Tri specijalnosti. Jedan standard izvedbe."} children={<div className="cards-wrapper">{cards}</div>}>
       </Section>
+      <SectionCta tagText={"// Spremni za novi projekt?"} title={"Zatražite procjenu"} desc={"Bez skrivenih troškova. Poštena procjena na vašoj adresi."} id = {"cta"} children={<Button className="button accent">Pošalji upit</Button>}>
+      </SectionCta>
     </>
   );
 }

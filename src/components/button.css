@@ -1,5 +1,5 @@
 .button-group {
-  padding: 0rem var(--padding-global);
+  padding: 0rem 1.5rem;
   margin-bottom: 0.5rem;
   display: flex;
   flex-direction: column;
@@ -30,7 +30,7 @@ header .button{
 }
 
 .button:hover {
-  box-shadow: 4px 5px 0px black;
+  box-shadow: var(--shadow);
 }
 
 .accent {

@@ -5,6 +5,7 @@
   --text-ter: #5c6a7d;
   --text-hover: #1c3f66;
   --bg-hover: #1c3f66;
+  --bg-cta: #1c3f66;
   --bg: #f4f1e8;
   --bg-alt: #ece8db;
   --bg-ter: #0f2a47;
@@ -13,9 +14,8 @@
   --accent: #e8541e;
   --accent-alt: #c44415;
   --social-bg: rgba(244, 243, 236, 0.5);
-  --shadow:
-    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
-
+  --shadow:4px 5px 0px black;
+  --shadow2:8px 9px 0px black;
   --tagline: JetBrains_Mono, "Segoe UI", Roboto, sans-serif;
   --heading: Archivo, "Segoe UI", Roboto, sans-serif;
   --text-font: IBM_Plex_Sans, Consolas, monospace;
@@ -125,10 +125,12 @@ p {
   line-height: 1.5;
 }
 
+
 /* Utility classes */
 
 .container-large {
   max-width: var(--container-large);
+  margin: 0 auto;
 }
 
 .padding-section-large {
@@ -136,3 +138,4 @@ p {
   padding: var(--padding-section-large) var(--padding-global);
   
 }
+

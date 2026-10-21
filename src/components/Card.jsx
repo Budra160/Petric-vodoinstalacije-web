@@ -1,7 +1,7 @@
-import "./card.css";
+import "./carda.css";
 import Button from "./Button";
 
-const cardContent = [
+export const cardContent = [
 {
     tagline: "01 - bez iskopa",
     title: "Sanacija epox smolom",
@@ -36,8 +36,9 @@ export default function Card({tagText, title, subText, content, cardId}){
 
                 <p>{content}</p>
 
-                <Button props={{id : cardId}}/>
+                <Button id={cardId} children={"Saznaj više"}/>
             </div>
         </div>
     )
 }
+

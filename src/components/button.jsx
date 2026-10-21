@@ -1,8 +1,8 @@
 import "./button.css";
 
-export default function Button({ children, className = "button", ...props }) {
+export default function Button({ children, className = "button" }) {
   return (
-    <button className={className} {...props}>
+    <button className={className}>
       {children}
     </button>
   );

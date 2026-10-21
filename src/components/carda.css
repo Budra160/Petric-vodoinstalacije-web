@@ -1,0 +1,37 @@
+.cards-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    @media (min-width: 1024px) {
+        flex-direction: row;
+    }
+}
+
+.card .tagline{
+    border: none;
+    background-color: var(--bg-ter);
+    color: white;
+    border-radius: 0px;
+    padding: .5rem var(--padding-global);
+    text-align: left;
+}
+
+
+.card{
+    max-width: 25rem;
+    transition: all 0.5s ease;
+    text-align: left;
+}
+
+.card:hover{
+    box-shadow: var(--shadow2);
+}
+.card-content{
+    border: 2px solid var(--border);
+    border-top:none;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
