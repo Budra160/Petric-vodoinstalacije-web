@@ -4,6 +4,7 @@
   --text-alt: #35557a;
   --text-ter: #5c6a7d;
   --text-hover: #1c3f66;
+  --footer-txt-color: rgba(243, 240, 231, 65%);
   --bg-hover: #1c3f66;
   --bg-cta: #1c3f66;
   --bg: #f4f1e8;
@@ -138,4 +139,6 @@ p {
   padding: var(--padding-section-large) var(--padding-global);
   
 }
-
+.padding-section-medium{
+  padding: var(--padding-section-medium) var(--padding-global);
+}

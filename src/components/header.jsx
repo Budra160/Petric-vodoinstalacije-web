@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Button from "./Button";
 import "./header.css";
 
@@ -15,6 +15,7 @@ export default function CreateNav() {
         <NavLogo />
 
         <nav
+          className="h-nav"
           style={{ height: isOpen ? "17.85rem" : "0px" }}
           aria-label="Glavna navigacija"
         >
@@ -97,7 +98,7 @@ export default function CreateNav() {
   );
 }
 
-function NavLogo() {
+export function NavLogo() {
   return (
     <div className="logo-wrapper">
       <div className="logo-left">

@@ -106,7 +106,7 @@ header {
   color: var(--text);
 }
 
-nav {
+.h-nav {
   position: absolute;
   margin: 0 auto;
   top: 100%;

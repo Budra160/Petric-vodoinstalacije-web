@@ -1,7 +1,15 @@
 import "./sectionhero.css"
 import Button from "./Button"
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/pagination';
+
+const imgs = ["/img1.jpg","/img2.jpg","/img3.jpeg"]
+
 
 export default function SectionHero({ ...props}){
+
     return(
         <section {...props}>
             <div className="container-large  padding-section-large">
@@ -20,7 +28,17 @@ export default function SectionHero({ ...props}){
                     </div>
                     </div>
                     <div className="hero-image-wrapper">
-
+                        <Swiper
+                            pagination={{
+                                dynamicBullets: true,
+                            }}
+                            autoplay={{
+                                delay: 5000,
+                            }}
+                            modules={[Pagination, Autoplay]}
+                        className="heroSwiper">
+                            {imgs.map(element => <SwiperSlide><img src={element} alt={element + " slika!"}></img></SwiperSlide>)}
+                        </Swiper>
                     </div>
                     
                 </div>
