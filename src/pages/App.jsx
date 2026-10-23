@@ -1,6 +1,6 @@
 import SectionHero from "../components/SectionHero.jsx";
 import Section from "../components/Section.jsx";
-import Card from "../components/card.jsx";
+import Card from "../components/kartica.jsx";
 import SectionCta from "../components/SectionCta.jsx";
 import "./App.css";
 import Button from "../components/button.jsx";
