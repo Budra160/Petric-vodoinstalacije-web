@@ -22,7 +22,6 @@ header {
   }
 }
 
-
 .logo-wrapper {
   display: flex;
   gap: 0.5rem;
@@ -35,12 +34,12 @@ header {
 
   font-family: var(--heading);
   font-weight: bold;
-  @media (min-width:1024px) {
+  @media (min-width: 1024px) {
     font-size: 1.65rem;
   }
 }
 
-.logo-left p{
+.logo-left p {
   line-height: 1;
 }
 

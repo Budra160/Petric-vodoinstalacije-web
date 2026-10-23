@@ -15,7 +15,7 @@ createRoot(document.getElementById("root")).render(
           <Route path="/" element={<App />} />
         </Routes>
       </main>
-      <Footer/>
+      <Footer />
     </BrowserRouter>
-  </StrictMode>
+  </StrictMode>,
 );
