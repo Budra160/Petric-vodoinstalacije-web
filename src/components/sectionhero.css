@@ -19,7 +19,10 @@
   padding: .5rem .5rem;
   border-top: 1px solid var(--bg-ter);
   border-left: 1px solid var(--bg-ter);
-  width: 55%;
+  @media (min-width:1024px) {
+    width: 55%;
+  }
+ 
 }
 
 .heroSwiper, .swiper-wrapper, .swiper-slide, img{
@@ -36,7 +39,7 @@
 }
 
 .swiper-pagination{
-  padding: .5rem;
+  padding: .5rem .25rem;
   background-color: rgba(0, 0, 0, 0.35);
   border-radius: 8px;
   display: flex;
