@@ -1,5 +1,5 @@
 import "./sectionhero.css";
-import Button from "./Button";
+import Button from "./button.jsx";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
