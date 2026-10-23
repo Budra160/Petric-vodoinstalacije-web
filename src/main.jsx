@@ -12,7 +12,7 @@ createRoot(document.getElementById("root")).render(
       <CreateNav />
       <main id="glavni-sadržaj">
         <Routes>
-          <Route path="/" element={<App />} />
+          <Route path="/home"  element={<App />} ><Redirect to="/home"/></Route>
         </Routes>
       </main>
       <Footer />
