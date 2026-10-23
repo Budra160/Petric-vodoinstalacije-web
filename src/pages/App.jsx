@@ -1,9 +1,9 @@
 import SectionHero from "../components/SectionHero";
 import Section from "../components/Section";
-import Card from "../components/card.jsx";
+import Card from "../components/card";
 import SectionCta from "../components/SectionCta";
 import "./App.css";
-import Button from "../components/button.jsx";
+import Button from "../components/Button";
 const cardContent = [
   {
     tagline: "01 - bez iskopa",
