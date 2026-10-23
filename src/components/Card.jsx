@@ -1,5 +1,5 @@
 import "./carda.css";
-import Button from "./Button";
+import Button from "./button.jsx";
 
 export default function Card({ tagText, title, subText, content, cardId }) {
   return (
