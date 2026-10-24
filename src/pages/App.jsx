@@ -36,15 +36,15 @@ function App() {
     <>
       <SectionHero />
       <Section
-        tagText={"01 - Usluge"}
-        title={"Tri specijalnosti. Jedan standard izvedbe."}
+        tagText={<div className="tagline">01 - Usluge</div>}
+        title={<h2>Tri specijalnosti. Jedan standard izvedbe.</h2>}
         children={
           <div className="cards-wrapper">
             {cardContent.map((data) => {
               return (
                 <Card
                   tagText={data.tagline}
-                  title={data.title}
+                  title={<h3>{data.title}</h3>}
                   subText={data.subTitle}
                   content={data.content}
                   key={data.id}

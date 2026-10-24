@@ -6,11 +6,14 @@
   --text-hover: #1c3f66;
   --footer-txt-color: rgba(243, 240, 231, 65%);
   --bg-hover: #1c3f66;
-  --bg-cta: #1c3f66;
+  --bg-ter-light: #1c3f66;
+  --bg-banner: linear-gradient(180deg, #2d6b4f -10%, #1c3f66 80%);
   --bg: #f4f1e8;
   --bg-alt: #ece8db;
   --bg-ter: #0f2a47;
   --border: hsla(215, 15%, 43%, 0.25);
+  --border-alt: white;
+  --border-ter: var(--text);
   --code-bg: #f4f3ec;
   --accent: #e8541e;
   --accent-alt: #c44415;
@@ -101,12 +104,11 @@ body {
 h1,
 h2 {
   font-family: var(--heading);
-  font-weight: 600;
+  font-weight: 650;
   color: var(--text);
 }
 
 h1 {
-  font-weight: 600;
   font-size: 64px;
   letter-spacing: -1.68px;
   @media (max-width: 1024px) {

@@ -1,19 +1,19 @@
 import "./carda.css";
 import Button from "./button.jsx";
 
-export default function Card({ tagText, title, subText, content, cardId }) {
+export default function Card({ tagText, title, subText, content, id }) {
   return (
     <div className="card">
-      <div className="tagline">{tagText}</div>
+      {tagText ? <div className="tagline">{tagText}</div>: ""}
       <div className="card-content">
         <div className="card-heading">
-          <h3>{title}</h3>
-          <p className="sub">{subText}</p>
+          {title}
+          {subText ? <p className="sub">{subText}</p>: <></>}
         </div>
 
         <p>{content}</p>
 
-        <Button id={cardId} children={"Saznaj više"} />
+        {id ? <Button id={id} children={"Saznaj više"} />:<></>}
       </div>
     </div>
   );

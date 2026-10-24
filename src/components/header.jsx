@@ -21,10 +21,10 @@ export default function CreateNav() {
         >
           <ul className="nav-links">
             <li>
-              <Link to="/home">Naslovnica</Link>
+              <Link to="/">Naslovnica</Link>
             </li>
             <li>
-              <Link to="/">Epoxy</Link>
+              <Link to="/epoxy">Epoxy</Link>
             </li>
             <li>
               <Link to="/">Faq</Link>
