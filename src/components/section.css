@@ -25,6 +25,7 @@
 
 
 
+
 #cta .section-h2 {
   border: none;
 }
@@ -45,7 +46,7 @@
   @media (min-width: 1024px) {
     background-image: linear-gradient(
       45deg,
-      var(--bg-cta) 45%,
+      var(--bg-ter-light) 45%,
       transparent 70%
     );
   }
@@ -63,7 +64,7 @@
   top: 0%;
   bottom: 0%;
   z-index: -1;
-  background-color: var(--bg-cta);
+  background-color: var(--bg-ter);
   @media (min-width: 1024px) {
     background-image: radial-gradient(
       circle,
