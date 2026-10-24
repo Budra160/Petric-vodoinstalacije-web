@@ -2,6 +2,7 @@ import "./epoxy-s.css";
 import Section from "../components/Section.jsx"
 import Button from "../components/button.jsx";
 import Card from "../components/kartica.jsx";
+import SectionCta from "../components/SectionCta.jsx"
 
 const whyCardContent = [
     {
@@ -22,6 +23,34 @@ const whyCardContent = [
         title: "Stambene zgrade",
         content: "Vertikalne cijevi u zgradama idealne su za epoxy sanaciju — bez razbijanja kupaonica i uznemiravanja susjeda."
     }
+]
+
+const processSteps = [
+    {
+        id:0,
+        title: "Dijagnostika kamerom",
+        content: "Inspekcijskom kamerom pregledavamo unutrašnjost cijevi — utvrđujemo točnu poziciju oštećenja, promjer i duljinu sanacije."
+    },
+    {
+        id:1,
+        title: "Priprema cijevi",
+        content: "Visokotlačnim čistačem uklanjamo naslage, kamenac i korijenje. Cijev mora biti potpuno čista za prihvat epoxy obloge."
+    },
+    {
+        id:2,
+        title: "Ugradnja epoxy obloge",
+        content: "U cijev uvodimo epoxy smolu koja se ravnomjerno raspoređuje po cijeloj unutrašnjoj stijenci — stvara novi, glatki sloj."
+    },
+    {
+        id:3,
+        title: "Stvrdnjavanje",
+        content: "Epoxy se stvrdnjava prema propisanom vremenu (ovisi o materijalu i temperaturi). Proces je kontroliran i bezopasan."
+    },
+    {
+        id:4,
+        title: "Kontrola i primopredaja",
+        content: "Završnom inspekcijom provjeravamo debljinu sloja i protok. Zajedno s vama pregledavamo rezultat."
+    },
 ]
 
 
@@ -78,10 +107,39 @@ export default function Epoxy(){
                             content={<p>{element.content}</p>}>
                         </Card>)}
                     </div>
-
                 }   
             >
             </Section>
+            <Section
+                tagText={<div className="tagline">03 - Proces</div>}
+                title={<h2>Kako izvodimo epoxy sanaciju</h2>}
+                children={
+                    <div className="process-content">
+                        <span className="process-tagline">Proces izvedbe<b> - Epoxy sanacije</b></span>
+                        <ul className="process-list">
+                            {processSteps.map(element => 
+                                <li key={element.id}>
+                                    <div className="icon">
+                                        {"0" + (element.id + 1)}
+                                    </div>
+                                    <div className="content">
+                                        <h3>{element.title}</h3>
+                                        <p>{element.content}</p>
+                                    </div>
+                                </li>
+                            )}                            
+                        </ul>
+                    </div>
+                }
+            >
+            </Section>
+            <SectionCta
+                title={"Spremni za epoxy sanaciju?"}
+                desc={"Zatražite besplatnu procjenu — dolazimo na teren, dajemo poštenu ponudu."}
+                id="cta"
+                children={<Button className="button accent">Pošalji upit</Button>}
+            >
+            </SectionCta>
         </>
     )
 }
