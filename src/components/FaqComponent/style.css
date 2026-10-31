@@ -1,0 +1,25 @@
+button{
+    border:none;
+    background-color: var(--bg);
+    cursor: pointer;
+}
+
+.faq-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+    border:1px solid var(--border-ter);
+    border-radius: 4px;
+}
+
+.faq-item{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.3rem 1.5rem;
+
+}
+
+.faq-question{
+    display: flex;
+    gap: .75rem;
+}
