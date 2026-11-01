@@ -18,7 +18,7 @@ createRoot(document.getElementById("root")).render(
           <Route path="/" element={<App />}></Route>
           <Route path="/epoxy" element={<Epoxy />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
-          <Route path="/faq" element={<Faq></Faq>}></Route>
+          <Route path="/faq" element={<Faq/>}></Route>
         </Routes>
       </main>
       <Footer />

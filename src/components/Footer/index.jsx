@@ -2,6 +2,10 @@ import "./style.css";
 import { NavLogo } from "../Header";
 import { Link } from "react-router-dom";
 
+function scrollToTop(){
+  window.scrollTo({ top: 0, behavior: "smooth" })
+};
+
 export default function Footer() {
   return (
     <footer>
@@ -21,16 +25,16 @@ export default function Footer() {
               </div>
               <ul className="footer-links">
                 <li>
-                  <Link to="/">Naslovnica</Link>
+                  <Link onClick={scrollToTop} to="/">Naslovnica</Link>
                 </li>
                 <li>
-                  <Link to="/epoxy">Epoxy</Link>
+                  <Link onClick={scrollToTop} to="/epoxy">Epoxy</Link>
                 </li>
                 <li>
-                  <Link to="/">Faq</Link>
+                  <Link onClick={scrollToTop} to="/faq">Faq</Link>
                 </li>
                 <li>
-                  <Link to="/contact">Kontakt</Link>
+                  <Link onClick={scrollToTop} to="/contact">Kontakt</Link>
                 </li>
               </ul>
             </nav>

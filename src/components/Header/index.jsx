@@ -34,10 +34,7 @@ export default function CreateNav() {
             </li>
           </ul>
 
-          <div className="button-group">
-            <Button className="button accent">Pozovi</Button>
-            <Button className="button">Upit</Button>
-          </div>
+          
         </nav>
 
         <svg

@@ -1,7 +1,7 @@
 import "./style.css";
-import Button from "../Button";
 
-export default function Card({ tagText, title, subText, content, id }) {
+
+export default function Card({ tagText, title, subText, content, children }) {
   return (
     <div className="card">
       {tagText ? <div className="tagline">{tagText}</div> : ""}
@@ -13,7 +13,7 @@ export default function Card({ tagText, title, subText, content, id }) {
 
         {content}
 
-        {id ? <Button id={id} children={"Saznaj više"} /> : <></>}
+        {children}
       </div>
     </div>
   );

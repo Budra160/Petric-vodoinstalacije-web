@@ -50,11 +50,11 @@ export default function Contact() {
               <ul className="contact-list">
                 <li>
                   <p>Telefon</p>
-                  <a>Kneza Višeslava 21, 43000 Bjelovar</a>
+                  <a href="tel:0977120700">097-712-0700</a>
                 </li>
                 <li>
                   <p>E-Mail</p>
-                  <a>info@petric-vodoinstalacije.hr</a>
+                  <a href="mailto:info@petric-vodoinstalacije.hr">info@petric-vodoinstalacije.hr</a>
                 </li>
                 <li>
                   <p>Radno vrijeme</p>

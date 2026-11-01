@@ -150,7 +150,7 @@ export const cardContent = [
     subTitle: "Rješavanje začepljenja",
     content:
       "Začepljeni odvodi, WC ili vanjska kanalizacija? Dolazimo s profesionalnom opremom — sajlama i visokotlačnim čistačima — i rješavamo uzrok, ne samo simptom.",
-    id: "odštopavanje",
+    id: "odstopavanje",
   },
 ];
 

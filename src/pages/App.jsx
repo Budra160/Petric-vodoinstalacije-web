@@ -24,7 +24,7 @@ function App() {
                   subText={data.subTitle}
                   content={data.content}
                   key={data.id}
-                  id={data.id}
+                  children={<Link to={"/"+data.id} className="button">Saznaj više</Link>}
                 />
               );
             })}

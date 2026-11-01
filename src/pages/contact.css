@@ -51,13 +51,20 @@
   text-transform: uppercase;
 }
 
+
 .contact-list li a,
 .contact-list li p:last-child {
   font-weight: 600;
-  transition: all 0.25s ease;
-  cursor: pointer;
+
 }
 
 .contact-list li a:hover {
   color: var(--accent);
+}
+
+a{
+  transition: all 0.25s ease;
+  cursor: pointer;
+  color:var(--text);
+  text-decoration: none;
 }

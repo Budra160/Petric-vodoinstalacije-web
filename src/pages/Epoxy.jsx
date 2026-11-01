@@ -4,6 +4,7 @@ import Button from "../components/Button/index.jsx";
 import Card from "../components/Card/index.jsx";
 import SectionCta from "../components/CTA/index.jsx";
 import { whyCardContent, processSteps } from "../constants.jsx";
+import { Link } from "react-router-dom";
 
 export default function Epoxy() {
   return (
@@ -24,7 +25,7 @@ export default function Epoxy() {
             </p>{" "}
           </>
         }
-        children={<Button className="button accent">Zatraži procjenu</Button>}
+        children={<Link to="/contact" className="button accent">Zatraži procjenu</Link>}
       ></Section>
       <Section
         tagText={<div className="tagline">01 - što je sanacija epoxy-em</div>}
@@ -124,7 +125,7 @@ export default function Epoxy() {
           "Zatražite besplatnu procjenu — dolazimo na teren, dajemo poštenu ponudu."
         }
         id="cta"
-        children={<Button className="button accent">Pošalji upit</Button>}
+        children={<Link to="/contact" className="button accent">Pošalji upit</Link>}
       ></SectionCta>
     </>
   );
