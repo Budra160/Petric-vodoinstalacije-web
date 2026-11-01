@@ -1,38 +1,4 @@
-#epoxy-hero {
-  background: var(--bg-banner);
-  color: var(--text-light);
-}
 
-#epoxy-hero .section-content {
-  justify-content: center;
-  align-items: center;
-  gap: 1.5rem;
-}
-
-#epoxy-hero h1 {
-  color: var(--text-light);
-}
-
-#epoxy-hero .tagline {
-  border-color: var(--border-alt);
-}
-
-.accent-tag {
-  color: var(--accent);
-}
-
-#epoxy-hero .section-h2 {
-  border: none;
-  justify-content: center;
-  align-items: center;
-}
-
-#epoxy-hero .button {
-  @media (min-width: 1024px) {
-    max-width: 30%;
-    width: 100%;
-  }
-}
 
 /* About section */
 
