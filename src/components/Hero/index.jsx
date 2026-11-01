@@ -1,7 +1,7 @@
 import "./style.css";
-import Button from "../Button";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
+import { Link } from "react-router-dom";
 import "swiper/css";
 import "swiper/css/pagination";
 
@@ -27,7 +27,7 @@ export default function SectionHero({ ...props }) {
                 iskopa, dijamantno bušenje kruna i profesionalno odštopavanje.
                 Sve prema planu, s mjerljivim rezultatom.
               </p>
-              <Button className="button accent">Zatraži procjenu</Button>
+              <Link to="/contact" className="button accent">Zatraži procjenu</Link>
             </div>
           </div>
           <div className="hero-image-wrapper">

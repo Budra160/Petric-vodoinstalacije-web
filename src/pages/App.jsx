@@ -5,6 +5,7 @@ import SectionCta from "../components/CTA/index.jsx";
 import "./App.css";
 import Button from "../components/Button/index.jsx";
 import { cardContent } from "../constants.jsx";
+import { Link } from "react-router-dom";
 
 function App() {
   return (
@@ -35,7 +36,7 @@ function App() {
         title={"Zatražite procjenu"}
         desc={"Bez skrivenih troškova. Poštena procjena na vašoj adresi."}
         id={"cta"}
-        children={<Button className="button accent">Pošalji upit</Button>}
+        children={<Link to="/contact" className="button accent">Pošalji upit</Link>}
       ></SectionCta>
     </>
   );
