@@ -1,7 +1,7 @@
 
 import Section from "../components/Section";
 import FaqComp from "../components/FaqComponent/index"
-
+import { faqItems } from "../constants";
 export default function Faq(){
 
     return (
@@ -34,7 +34,7 @@ export default function Faq(){
                         <h2>Sve  što trebate znati.</h2>  
                     </>
                 }
-                children={<FaqComp/>}
+                children={<FaqComp constant={faqItems}/>}
             >
             </Section>
         </>
