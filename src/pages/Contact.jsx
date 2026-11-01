@@ -2,10 +2,24 @@ import "./contact.css";
 import "./epoxy-s.css";
 import Section from "../components/Section/index.jsx";
 import Form from "../components/Form/index.jsx";
+import { ConsentProvider, ConsentBanner } from "react-hook-consent";
+import 'react-hook-consent/dist/styles/style.css';
 
 export default function Contact() {
   return (
-    <>
+    <ConsentProvider
+      options={{
+        services: [
+          {
+            id: 'recaptcha',
+            name: 'Google reCAPTCHA',
+            // You can declare cookies, localStorage keys, or scripts to load
+            cookies: [{ pattern: 'recaptcha' }],
+            localStorage: ['recaptcha-cache'],
+          },
+        ],
+      }}
+    >
       <Section
         tagText={
           <div className="tagline">
@@ -54,6 +68,10 @@ export default function Contact() {
           </div>
         }
       ></Section>
-    </>
+      <ConsentBanner>
+        This site uses third-party cookies for security (reCAPTCHA). Do you
+        consent?
+      </ConsentBanner>
+    </ConsentProvider>
   );
 }
