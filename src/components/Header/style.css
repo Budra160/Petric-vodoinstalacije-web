@@ -120,6 +120,7 @@ header {
   background-color: var(--bg);
   transform-origin: top;
   border-bottom: 2px solid var(--border);
+  overflow: hidden;
   @media (min-width: 1024px) {
     position: static !important;
     align-items: center !important;
@@ -129,6 +130,7 @@ header {
     gap: 0.5rem !important;
     width: fit-content !important;
     margin: 0 !important;
+    overflow: visible !important;
   }
 }
 .skip {

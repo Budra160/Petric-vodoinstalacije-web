@@ -17,7 +17,7 @@ export default function CreateNav() {
 
         <nav
           className="h-nav"
-          style={{ height: isOpen ? "17.85rem" : "0px" }}
+          style={{ height: isOpen ? "fit-content" : "0px" }}
           aria-label="Glavna navigacija"
         >
           <ul className="nav-links">
