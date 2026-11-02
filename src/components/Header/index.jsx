@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import Button from "../Button";
 import "./style.css";
 
 export default function CreateNav() {
@@ -25,6 +24,12 @@ export default function CreateNav() {
             </li>
             <li>
               <Link to="/epoxy">Epoxy</Link>
+            </li>
+            <li>
+              <Link to="/krune">Bušenje Krunama</Link>
+            </li>
+            <li>
+              <Link to="/odstop">Odštopavanje</Link>
             </li>
             <li>
               <Link to="/faq">Faq</Link>

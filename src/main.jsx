@@ -8,6 +8,8 @@ import CreateNav from "./components/Header/index.jsx";
 import Epoxy from "./pages/Epoxy.jsx";
 import Contact from "./pages/Contact.jsx";
 import Faq from "./pages/Faq.jsx";
+import Service from "./pages/Service.jsx";
+import {services} from "./constants.jsx"
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -19,6 +21,8 @@ createRoot(document.getElementById("root")).render(
           <Route path="/epoxy" element={<Epoxy />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
           <Route path="/faq" element={<Faq/>}></Route>
+          <Route path="/krune" element={<Service contentData={services[0]}/>}></Route>
+          <Route path="/odstop" element={<Service />}></Route>
         </Routes>
       </main>
       <Footer />

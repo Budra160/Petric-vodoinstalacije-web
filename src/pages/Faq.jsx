@@ -12,7 +12,7 @@ export default function Faq(){
                     <span className="accent-tag">//</span>faq
                   </div>
                 }
-                props={{ id: "epoxy-hero" }}
+                props={{ id: "secondary-hero" }}
                 title={
                   <>
                     <h1>Često postavljena pitanja.</h1>{" "}

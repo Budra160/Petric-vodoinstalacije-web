@@ -84,12 +84,12 @@
   }
 }
 
-#epoxy-hero {
+#secondary-hero {
   background: var(--bg-banner);
   color: var(--text-light);
 }
 
-#epoxy-hero .section-content {
+#secondary-hero .section-content {
     gap: 1.5rem;  
   @media (min-width:1024px) {
     justify-content: center;
@@ -99,11 +99,11 @@
   
 }
 
-#epoxy-hero h1 {
+#secondary-hero h1 {
   color: var(--text-light);
 }
 
-#epoxy-hero .tagline {
+#secondary-hero .tagline {
   border-color: var(--border-alt);
 }
 
@@ -111,7 +111,7 @@
   color: var(--accent);
 }
 
-#epoxy-hero .section-h2 {
+#secondary-hero .section-h2 {
 
   @media (min-width:1024px) {
     border: none;
@@ -121,7 +121,7 @@
   
 }
 
-#epoxy-hero .button {
+#secondary-hero .button {
   @media (min-width: 1024px) {
     max-width: 30%;
     width: 100%;

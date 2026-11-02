@@ -1,11 +1,10 @@
 import "./epoxy-s.css";
 import Section from "../components/Section/index.jsx";
-import Button from "../components/Button/index.jsx";
 import Card from "../components/Card/index.jsx";
 import SectionCta from "../components/CTA/index.jsx";
 import { whyCardContent, processSteps } from "../constants.jsx";
 import { Link } from "react-router-dom";
-
+import Process from "../components/Process/index.jsx";
 export default function Epoxy() {
   return (
     <>
@@ -15,7 +14,7 @@ export default function Epoxy() {
             <span className="accent-tag">//</span> glavna specijalnost
           </div>
         }
-        props={{ id: "epoxy-hero" }}
+        props={{ id: "secondary-hero" }}
         title={
           <>
             <h1>Sanacija epoxy smolom.</h1>{" "}
@@ -101,23 +100,10 @@ export default function Epoxy() {
         tagText={<div className="tagline">03 - Proces</div>}
         title={<h2>Kako izvodimo epoxy sanaciju</h2>}
         children={
-          <div className="process-content">
-            <span className="process-tagline">
-              Proces izvedbe<b> - Epoxy sanacije</b>
-            </span>
-            <ul className="process-list">
-              {processSteps.map((element) => (
-                <li key={element.id}>
-                  <div className="icon">{"0" + (element.id + 1)}</div>
-                  <div className="content">
-                    <h3>{element.title}</h3>
-                    <p>{element.content}</p>
-                  </div>
-                </li>
-              ))}
-            </ul>
-          </div>
-        }
+        <Process 
+          title={"Epoxy sanacija"}
+          data={processSteps}  
+        ></Process>}
       ></Section>
       <SectionCta
         title={"Spremni za epoxy sanaciju?"}
