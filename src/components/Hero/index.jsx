@@ -4,8 +4,8 @@ import { Pagination, Autoplay } from "swiper/modules";
 import { Link } from "react-router-dom";
 import "swiper/css";
 import "swiper/css/pagination";
+import { imgs } from "../../constants";
 
-const imgs = ["/img1.jpg", "/img2.jpg", "/img3.jpeg"];
 
 export default function SectionHero({ ...props }) {
   return (
@@ -43,7 +43,7 @@ export default function SectionHero({ ...props }) {
             >
               {imgs.map((element) => (
                 <SwiperSlide>
-                  <img src={element} alt={element + " slika!"}></img>
+                  <img fetchPriority="high" src={element} alt={element + " slika!"}></img>
                 </SwiperSlide>
               ))}
             </Swiper>

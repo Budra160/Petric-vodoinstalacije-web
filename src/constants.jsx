@@ -286,3 +286,5 @@ export const navDropdown = [
   },
 
 ]
+
+export const imgs = ["/img1.webp", "/img2.webp", "/img3.webp"];
