@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import "./style.css";
 import Dropdown from "../Dropdown/index.jsx"
@@ -22,16 +22,16 @@ export default function CreateNav() {
         >
           <ul className="nav-links">
             <li>
-              <Link to="/">Naslovnica</Link>
+              <NavLink to="/">Naslovnica</NavLink>
             </li>
             <li>
               <Dropdown link={navDropdown}/>
             </li>
             <li>
-              <Link to="/faq">Faq</Link>
+              <NavLink to="/faq">Faq</NavLink>
             </li>
             <li>
-              <Link to="/contact">Kontakt</Link>
+              <NavLink  to="/contact">Kontakt</NavLink>
             </li>
           </ul>
 

@@ -1,6 +1,6 @@
 import "./style.css";
 import {useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default function Dropdown({link}){
     const [isOpen, setIsOpen] = useState(false);
@@ -28,7 +28,7 @@ export default function Dropdown({link}){
             </a>
             <div className="dropdown-menu">
                 {link.map(link => {
-                    return <Link key={link.path} to={"/" + link.path}>{link.text}</Link>
+                    return <NavLink key={link.path} to={"/" + link.path}>{link.text}</NavLink>
                 })}
             </div>   
         </div>

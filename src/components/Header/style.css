@@ -146,3 +146,8 @@ header {
 .skip:focus {
   top: 10px;
 }
+
+a.active{
+  font-weight: 600;
+  color: var(--text);
+}
