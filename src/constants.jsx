@@ -1,4 +1,3 @@
-
 export const whyCardContent = [
   {
     id: 0,
@@ -182,109 +181,109 @@ export const faqItems = [
         answer:"Pokrivamo Bjelovar i okolicu. Za udaljenije lokacije javite se telefonom pa ćemo se dogovoriti."
     }
 
-]
-
-export const services = [
-  {
-    hero:{
-        tagline: "Bušenje krunama",
-        id: "secondary-hero",
-        titleh1:"Bušenje krunama",
-        description: "Dijamantno bušenje kruna za precizne otvore u armiranom betonu, cigli i kamenu — bez vibracija i prašine."
-    },
-    about:{
-        tagline: "01 - o usluzi",
-        title: "Što je bušenje krunama?",
-        content: "Dijamantno bušenje kruna za precizne otvore u armiranom betonu, cigli i kamenu. Bez vibracija, bez pucanja, bez prašine. Idealno za nove instalacije, ventilaciju i elektroinstalacije — čak i u nastanjenim prostorima. Otvori do Ø 300 mm, izvedeni precizno i čisto."
-    },
-    process:{
-        tagline: "02 - proces",
-        title: "Kako radimo",
-        pTitle: "Bušenje krunama",
-        data:[
-          {
-            id: 0,
-            title: "Priprema prostora i zaštita",
-            content:
-              "Prostor oko prekrivamo zaštitnim folijama, namještaj sklanjamo ili prekrivamo.",
-          },
-          {
-            id: 1,
-            title: "Bušenje dijamantnom krunom",
-            content:
-              "Dijamantnom krunom precizno bušimo otvor bez vibracija koje bi mogle oštetiti konstrukciju. Bušenje se izvodi s kontinuiranim hlađenjem zrakom",
-          },
-          {
-            id: 2,
-            title: "Čišćenje i primopredaja",
-            content:
-              "Uklanjamo zaštitne folije, čistimo prostor i uklanjamo sav otpadni materijal. Zajedno pregledavamo otvor, provjeravamo dimenzije i predajemo radilište u ispravnom stanju.",
-          }
-        ]
+  ]
+  
+  export const services = [
+    {
+      hero:{
+          tagline: "Bušenje krunama",
+          id: "secondary-hero",
+          titleh1:"Bušenje krunama",
+          description: "Dijamantno bušenje kruna za precizne otvore u armiranom betonu, cigli i kamenu — bez vibracija i prašine."
       },
-    cta:{
-        title: "Zatražite procjenu",
-        description: "Bez skrivenih troškova. Poštena procjena na vašoj adresi.",
+      about:{
+          tagline: "01 - o usluzi",
+          title: "Što je bušenje krunama?",
+          content: "Dijamantno bušenje kruna za precizne otvore u armiranom betonu, cigli i kamenu. Bez vibracija, bez pucanja, bez prašine. Idealno za nove instalacije, ventilaciju i elektroinstalacije — čak i u nastanjenim prostorima. Otvori do Ø 300 mm, izvedeni precizno i čisto."
+      },
+      process:{
+          tagline: "02 - proces",
+          title: "Kako radimo",
+          pTitle: "Bušenje krunama",
+          data:[
+            {
+              id: 0,
+              title: "Priprema prostora i zaštita",
+              content:
+                "Prostor oko prekrivamo zaštitnim folijama, namještaj sklanjamo ili prekrivamo.",
+            },
+            {
+              id: 1,
+              title: "Bušenje dijamantnom krunom",
+              content:
+                "Dijamantnom krunom precizno bušimo otvor bez vibracija koje bi mogle oštetiti konstrukciju. Bušenje se izvodi s kontinuiranim hlađenjem zrakom",
+            },
+            {
+              id: 2,
+              title: "Čišćenje i primopredaja",
+              content:
+                "Uklanjamo zaštitne folije, čistimo prostor i uklanjamo sav otpadni materijal. Zajedno pregledavamo otvor, provjeravamo dimenzije i predajemo radilište u ispravnom stanju.",
+            }
+          ]
+        },
+      cta:{
+          title: "Zatražite procjenu",
+          description: "Bez skrivenih troškova. Poštena procjena na vašoj adresi.",
+      }
+    },
+    {
+      hero:{
+        tagline: "odštopavanje",
+        id: "secondary-hero",
+        titleh1:"Odštopavanje kanalizacije",
+        description: "Profesionalno odštopavanje začepljene kanalizacije spiralama i visokotlačnim čistačima do 200 bar."
+      },
+      about:{
+          tagline: "01 - o usluzi",
+          title: "Detalji usluge",
+          content: "Profesionalno odštopavanje začepljene kanalizacije spiralama i visokotlačnim čistačima do 200 bar. Rješavamo uzrok, ne samo simptom. Uklanjamo kamenac, masnoće, korijenje i ostale nakupine koje uzrokuju začepljenja. Hitne intervencije isti dan u Bjelovaru i okolici."
+      },
+      process:{
+          tagline: "02 - proces",
+          title: "Kako radimo",
+          pTitle: "Odštopavanje kanalizacije",
+          data:[
+            {
+              id: 0,
+              title: "Dijagnostika i lociranje začepljenja",
+              content:
+                "Razgovaramo o simptomima i pregledavamo sve pristupne točke — slivnike, revizijska okna i sifone. Utvrđujemo točnu poziciju i prirodu začepljenja (masnoće, kamenac, korijenje, strani predmet).",
+            },
+            {
+              id: 1,
+              title: "Odštopavanje",
+              content:
+                "Prvo razbijamo i uklanjamo glavnu nakupinu. Te ispiremo/četkamo unutrašnjost cijevi i uklanjamo preostale naslaga. Time spriječavamo brzo ponovno začepljenje",
+            },
+            {
+              id: 2,
+              title: "Provjera protoka i primopredaja",
+              content:
+                "Testiramo protok kroz odvode i provjeravamo da voda slobodno otječe. Zajedno pregledavamo rezultat i dajemo savjete za buduća začepljenja.",
+            }
+          ]
+      },
+      cta:{
+          title: "Zatražite procjenu",
+          description: "Bez skrivenih troškova. Poštena procjena na vašoj adresi.",
+      }
     }
-  },
-  {
-    hero:{
-      tagline: "odštopavanje",
-      id: "secondary-hero",
-      titleh1:"Odštopavanje kanalizacije",
-      description: "Profesionalno odštopavanje začepljene kanalizacije spiralama i visokotlačnim čistačima do 200 bar."
+  ]
+  
+  export const navDropdown = [
+    {
+      path:"epoxy",
+      text:"Epoxy"
     },
-    about:{
-        tagline: "01 - o usluzi",
-        title: "Detalji usluge",
-        content: "Profesionalno odštopavanje začepljene kanalizacije spiralama i visokotlačnim čistačima do 200 bar. Rješavamo uzrok, ne samo simptom. Uklanjamo kamenac, masnoće, korijenje i ostale nakupine koje uzrokuju začepljenja. Hitne intervencije isti dan u Bjelovaru i okolici."
+    {
+      path:"krune",
+      text:"Bušenje krunama"
     },
-    process:{
-        tagline: "02 - proces",
-        title: "Kako radimo",
-        pTitle: "Odštopavanje kanalizacije",
-        data:[
-          {
-            id: 0,
-            title: "Dijagnostika i lociranje začepljenja",
-            content:
-              "Razgovaramo o simptomima i pregledavamo sve pristupne točke — slivnike, revizijska okna i sifone. Utvrđujemo točnu poziciju i prirodu začepljenja (masnoće, kamenac, korijenje, strani predmet).",
-          },
-          {
-            id: 1,
-            title: "Odštopavanje",
-            content:
-              "Prvo razbijamo i uklanjamo glavnu nakupinu. Te ispiremo/četkamo unutrašnjost cijevi i uklanjamo preostale naslaga. Time spriječavamo brzo ponovno začepljenje",
-          },
-          {
-            id: 2,
-            title: "Provjera protoka i primopredaja",
-            content:
-              "Testiramo protok kroz odvode i provjeravamo da voda slobodno otječe. Zajedno pregledavamo rezultat i dajemo savjete za buduća začepljenja.",
-          }
-        ]
+    {
+      path:"odstop",
+      text:"Odštopavanje"
     },
-    cta:{
-        title: "Zatražite procjenu",
-        description: "Bez skrivenih troškova. Poštena procjena na vašoj adresi.",
-    }
-  }
-]
-
-export const navDropdown = [
-  {
-    path:"epoxy",
-    text:"Epoxy"
-  },
-  {
-    path:"krune",
-    text:"Bušenje krunama"
-  },
-  {
-    path:"odstop",
-    text:"Odštopavanje"
-  },
-
-]
-
-export const imgs = ["/img1.webp", "/img2.webp", "/img3.webp"];
+  
+  ]
+  
+  export const imgs = ["/img1.webp", "/img2.webp", "/img3.webp"];
