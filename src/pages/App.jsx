@@ -3,9 +3,9 @@ import Section from "../components/Section/index.jsx";
 import Card from "../components/Card/index.jsx";
 import SectionCta from "../components/CTA/index.jsx";
 import "./App.css";
-import Button from "../components/Button/index.jsx";
 import { cardContent } from "../constants.jsx";
 import { Link } from "react-router-dom";
+import {scrollToTop} from "../components/Footer/index.jsx"
 
 function App() {
   return (
@@ -24,7 +24,7 @@ function App() {
                   subText={data.subTitle}
                   content={data.content}
                   key={data.id}
-                  children={<Link to={"/"+data.id} className="button">Saznaj više</Link>}
+                  children={<Link onClick={scrollToTop} to={"/"+data.id} className="button">Saznaj više</Link>}
                 />
               );
             })}

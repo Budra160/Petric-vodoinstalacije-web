@@ -2,7 +2,7 @@ import "./style.css";
 import { NavLogo } from "../Header";
 import { Link } from "react-router-dom";
 
-function scrollToTop(){
+export function scrollToTop(){
   window.scrollTo({ top: 0, behavior: "smooth" })
 };
 
