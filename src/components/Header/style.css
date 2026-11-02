@@ -99,6 +99,8 @@ header {
   font-size: 0.95rem;
   width: 100%;
   transition: all 0.25s ease;
+  display: flex;
+  align-items: center;
 }
 
 .nav-links a:hover {
@@ -115,7 +117,6 @@ header {
   flex-direction: column;
   gap: 0.75rem;
   transition: all 0.75s ease;
-  overflow: hidden;
   background-color: var(--bg);
   transform-origin: top;
   border-bottom: 2px solid var(--border);

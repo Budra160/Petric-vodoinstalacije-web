@@ -31,6 +31,12 @@ export default function Footer() {
                   <Link onClick={scrollToTop} to="/epoxy">Epoxy</Link>
                 </li>
                 <li>
+                  <Link onClick={scrollToTop} to="/krune">Bušenje Krunama</Link>
+                </li>
+                <li>
+                  <Link onClick={scrollToTop} to="/odstop">Odštopavanje</Link>
+                </li>
+                <li>
                   <Link onClick={scrollToTop} to="/faq">Faq</Link>
                 </li>
                 <li>
