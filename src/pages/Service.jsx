@@ -20,7 +20,7 @@ export default function Service({contentData}){
                     <>
                       <h1>{contentData.hero.titleh1}</h1>
                       <p>
-                         {contentData.hero.content}
+                         {contentData.hero.description}
                       </p>
                     </>
                   }
