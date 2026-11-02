@@ -28,6 +28,12 @@ export default function CreateNav() {
               <Dropdown link={navDropdown}/>
             </li>
             <li>
+              <Link to="/krune">Bušenje Krunama</Link>
+            </li>
+            <li>
+              <Link to="/odstop">Odštopavanje</Link>
+            </li>
+            <li>
               <Link to="/faq">Faq</Link>
             </li>
             <li>
