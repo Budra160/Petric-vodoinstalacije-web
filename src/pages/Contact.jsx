@@ -26,7 +26,7 @@ export default function Contact() {
             <span className="accent-tag">//</span> kontakt
           </div>
         }
-        props={{ id: "epoxy-hero" }}
+        props={{ id: "secondary-hero" }}
         title={
           <>
             <h1>Javite se — tu smo za vas.</h1>{" "}

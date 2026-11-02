@@ -1,3 +1,4 @@
+
 export const whyCardContent = [
   {
     id: 0,
@@ -181,4 +182,49 @@ export const faqItems = [
         answer:"Pokrivamo Bjelovar i okolicu. Za udaljenije lokacije javite se telefonom pa ćemo se dogovoriti."
     }
 
+]
+
+export const services = [
+  {
+      hero:{
+          tagline: "Bušenje krunama",
+          id: "secondary-hero",
+          titleh1:"Bušenje krunama",
+          description: "Dijamantno bušenje kruna za precizne otvore u armiranom betonu, cigli i kamenu — bez vibracija i prašine."
+      },
+      about:{
+          tagline: "01 - o usluzi",
+          title: "Što je bušenje krunama?",
+          content: "Dijamantno bušenje kruna za precizne otvore u armiranom betonu, cigli i kamenu. Bez vibracija, bez pucanja, bez prašine. Idealno za nove instalacije, ventilaciju i elektroinstalacije — čak i u nastanjenim prostorima. Otvori do Ø 300 mm, izvedeni precizno i čisto."
+      },
+      process:{
+          tagline: "02 - proces",
+          title: "Kako radimo",
+          pTitle: "Bušenje krunama",
+          data:[
+            {
+              id: 0,
+              title: "Priprema prostora i zaštita",
+              content:
+                "Prostor oko prekrivamo zaštitnim folijama, namještaj sklanjamo ili prekrivamo.",
+            },
+            {
+              id: 1,
+              title: "Bušenje dijamantnom krunom",
+              content:
+                "Dijamantnom krunom precizno bušimo otvor bez vibracija koje bi mogle oštetiti konstrukciju. Bušenje se izvodi s kontinuiranim hlađenjem zrakom",
+            },
+            {
+              id: 2,
+              title: "Čišćenje i primopredaja",
+              content:
+                "Uklanjamo zaštitne folije, čistimo prostor i uklanjamo sav otpadni materijal. Zajedno pregledavamo otvor, provjeravamo dimenzije i predajemo radilište u ispravnom stanju.",
+            }
+          ]
+      },
+      cta:{
+          title: "Zatražite procjenu",
+          description: "Bez skrivenih troškova. Poštena procjena na vašoj adresi.",
+      }
+  },
 ]
