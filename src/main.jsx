@@ -22,7 +22,7 @@ createRoot(document.getElementById("root")).render(
           <Route path="/contact" element={<Contact />}></Route>
           <Route path="/faq" element={<Faq/>}></Route>
           <Route path="/krune" element={<Service contentData={services[0]}/>}></Route>
-          <Route path="/odstop" element={<Service />}></Route>
+          <Route path="/odstop" element={<Service contentData={services[1]} />}></Route>
         </Routes>
       </main>
       <Footer />
