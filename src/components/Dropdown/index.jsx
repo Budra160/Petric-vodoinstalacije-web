@@ -22,7 +22,7 @@ export default function Dropdown({link}){
 
 
     return(
-        <div onClick={showContent} onFocus={focusShow} className="dropdown">
+        <div onClick={showContent} className="dropdown">
             <a className="dropdown-text">
                 Usluge
                 <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 9.343L12 15L6.343 9.343"/></svg> 
