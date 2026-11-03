@@ -31,7 +31,6 @@ export default function Dropdown({link}){
                 {link.map(link => {
                     return <NavLink key={link.path} to={"/" + link.path}>{link.text}</NavLink>
                 })}
-                <a href="." aria-hidden="true"  data-id="close" style={{padding:"0rem", margin:"0rem"}}></a>
             </div>   
         </div>
     );
