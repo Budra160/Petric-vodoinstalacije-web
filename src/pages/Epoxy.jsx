@@ -24,12 +24,14 @@ export default function Epoxy() {
             </p>{" "}
           </>
         }
-        children={<Link to="/contact" className="button accent">Zatraži procjenu</Link>}
-      ></Section>
+      >
+        {<Link to="/contact" className="button accent">Zatraži procjenu</Link>}
+      </Section>
       <Section
         tagText={<div className="tagline">01 - što je sanacija epoxy-em</div>}
         title={<h2>Što je sanacija epoxy smolom?</h2>}
-        children={
+      >
+        {
           <div className="about-content">
             <div className="about-left">
               <p>
@@ -75,11 +77,12 @@ export default function Epoxy() {
             ></Card>
           </div>
         }
-      ></Section>
+      </Section>
       <Section
         tagText={<div className="tagline">02 - Kada sanirati</div>}
         title={<h2>Kada koristiti epoxy sanaciju?</h2>}
-        children={
+      >
+        {
           <div className="why-cards">
             {whyCardContent.map((element) => (
               <Card
@@ -95,24 +98,26 @@ export default function Epoxy() {
             ))}
           </div>
         }
-      ></Section>
+      </Section>
       <Section
         tagText={<div className="tagline">03 - Proces</div>}
         title={<h2>Kako izvodimo epoxy sanaciju</h2>}
-        children={
+      >
+        {
         <Process 
           title={"Epoxy sanacija"}
           data={processSteps}  
         ></Process>}
-      ></Section>
+      </Section>
       <SectionCta
         title={"Spremni za epoxy sanaciju?"}
         desc={
           "Zatražite besplatnu procjenu — dolazimo na teren, dajemo poštenu ponudu."
         }
         id="cta"
-        children={<Link to="/contact" className="button accent">Pošalji upit</Link>}
-      ></SectionCta>
+      >
+        {<Link to="/contact" className="button accent">Pošalji upit</Link>}
+      </SectionCta>
     </>
   );
 }

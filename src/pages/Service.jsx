@@ -36,11 +36,10 @@ export default function Service({contentData}){
                         <h2>{contentData.about.title}</h2>
                     </>
                 }
-                children={
-                    <p>{contentData.about.content}</p>
-                }
 
-            ></Section>
+            >
+                <p>{contentData.about.content}</p>
+            </Section>
             <Section
                 tagText={
                     <div className="tagline">
@@ -50,19 +49,20 @@ export default function Service({contentData}){
                 title={
                     <h2>{contentData.process.title}</h2>
                 }
-                children={
-                    <Process
-                        title={contentData.process.pTitle}
-                        data={contentData.process.data}
-                    ></Process>
-                }
-            ></Section>
+            >
+                
+                <Process
+                    title={contentData.process.pTitle}
+                    data={contentData.process.data}
+                ></Process>
+                
+            </Section>
             <SectionCta
                 title={contentData.cta.title}
                 desc={contentData.cta.description}
                 id={"cta"}
-            children={<Link to="/contact" className="button accent">Zatraži procjenu</Link>}
             >
+                <Link to="/contact" className="button accent">Zatraži procjenu</Link>
             </SectionCta>
         </>
     )

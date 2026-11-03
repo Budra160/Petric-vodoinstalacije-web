@@ -13,32 +13,33 @@ export default function CreateNav() {
         Preskoci na sadrzaj
       </a>
       <header>
-        <NavLogo />
+        <div className="container-large">
+          <NavLogo />
 
-        <nav
-          className="h-nav"
-          style={{ height: isOpen ? "fit-content" : "0px" }}
-          aria-label="Glavna navigacija"
-        >
-          <ul className="nav-links">
-            <li>
-              <NavLink to="/">Naslovnica</NavLink>
-            </li>
-            <li>
-              <Dropdown link={navDropdown}/>
-            </li>
-            <li>
-              <NavLink to="/faq">Faq</NavLink>
-            </li>
-            <li>
-              <NavLink  to="/contact">Kontakt</NavLink>
-            </li>
-          </ul>
+          <nav
+            className="h-nav"
+            style={{ height: isOpen ? "fit-content" : "0px" }}
+            aria-label="Glavna navigacija"
+          >
+            <ul className="nav-links">
+              <li>
+                <NavLink to="/">Naslovnica</NavLink>
+              </li>
+              <li>
+                <Dropdown link={navDropdown}/>
+              </li>
+              <li>
+                <NavLink to="/faq">Faq</NavLink>
+              </li>
+              <li>
+                <NavLink  to="/contact">Kontakt</NavLink>
+              </li>
+            </ul>
 
           
-        </nav>
+          </nav>
 
-        <svg
+          <svg
           aria-label="Gumb za otvaranje menija"
           onClick={() => setIsOpen(!isOpen)}
           className="hb"
@@ -90,7 +91,8 @@ export default function CreateNav() {
               begin="reverse.begin"
             />
           </rect>
-        </svg>
+          </svg>
+        </div>
       </header>
     </>
   );

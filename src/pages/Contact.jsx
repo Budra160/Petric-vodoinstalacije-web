@@ -39,7 +39,8 @@ export default function Contact() {
       <Section
         tagText={<span className="tagline">01 - Kontakt</span>}
         title={<h2>Kontaktirajte nas</h2>}
-        children={
+      >
+        {
           <div className="contact-content">
             <div className="contact-left">
               <p>
@@ -67,7 +68,7 @@ export default function Contact() {
             </div>
           </div>
         }
-      ></Section>
+      </Section>
       <ConsentBanner>
         This site uses third-party cookies for security (reCAPTCHA). Do you
         consent?

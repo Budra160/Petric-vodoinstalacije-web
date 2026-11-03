@@ -9,6 +9,10 @@
     }
 }
 
+.dropdown:focus{
+    outline: 2px solid var(--accent);
+}
+
 .dropdown-text{
     gap: .75rem;
     @media (min-width:1024px) {
@@ -36,6 +40,7 @@
         position: absolute;
         top: 3rem;
         z-index: 4;
+        width: fit-content;
     } 
    
 }
@@ -49,4 +54,9 @@
 
 .dropdown.open svg{
     transform: rotate(180deg);
+}
+
+.dropdown a{
+    margin: .5rem;
+    width: 90%
 }

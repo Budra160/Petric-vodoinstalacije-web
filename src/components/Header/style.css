@@ -10,7 +10,7 @@
 }
 
 /* NAV STYLE */
-header {
+header .container-large {
   padding: 1.5rem var(--padding-global);
   display: flex;
   justify-content: space-between;

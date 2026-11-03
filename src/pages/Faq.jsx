@@ -34,8 +34,8 @@ export default function Faq(){
                         <h2>Sve  što trebate znati.</h2>  
                     </>
                 }
-                children={<FaqComp constant={faqItems}/>}
             >
+              <FaqComp constant={faqItems}/>
             </Section>
         </>
 

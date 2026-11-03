@@ -14,7 +14,8 @@ function App() {
       <Section
         tagText={<div className="tagline">01 - Usluge</div>}
         title={<h2>Tri specijalnosti. Jedan standard izvedbe.</h2>}
-        children={
+      >
+        {
           <div className="cards-wrapper">
             {cardContent.map((data) => {
               return (
@@ -30,14 +31,15 @@ function App() {
             })}
           </div>
         }
-      ></Section>
+      </Section>
       <SectionCta
         tagText={"// Spremni za novi projekt?"}
         title={"Zatražite procjenu"}
         desc={"Bez skrivenih troškova. Poštena procjena na vašoj adresi."}
         id={"cta"}
-        children={<Link to="/contact" className="button accent">Pošalji upit</Link>}
-      ></SectionCta>
+      >
+        {<Link to="/contact" className="button accent">Pošalji upit</Link>}
+      </SectionCta>
     </>
   );
 }
