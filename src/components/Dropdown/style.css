@@ -9,8 +9,8 @@
     }
 }
 
-.dropdown:focus{
-    outline: 2px solid var(--accent);
+.dropdown-menu:focus-within{
+    height: auto;
 }
 
 .dropdown-text{

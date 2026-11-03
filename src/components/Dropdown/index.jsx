@@ -20,21 +20,6 @@ export default function Dropdown({link}){
         }
     }
 
-    function focusShow(event){
-        event.preventDefault();
-        const dropdown = event.target.closest(".dropdown")
-        const item = event.target.closest(".dropdown-menu a");
-        console.log(item, event.target);
-
-        setIsOpen(true);
-        dropdown.classList.add("open");
-
-        if(event.target.dataset.id === "close")
-        {
-            setIsOpen(false);
-            dropdown.classList.remove("open");
-        }
-    } 
 
     return(
         <div onClick={showContent} onFocus={focusShow} className="dropdown">
